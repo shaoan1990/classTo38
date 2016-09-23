@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task | 38</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="padding">
+    
+    
+    <template id="tem-tbody">
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ Chinese }}</td>
+            <td>{{ math }}</td>
+            <td>{{ english }}</td>
+            <td>{{ physical }}</td>
+            <td>{{ all }}</td> 
+        </tr>
+    </template>
+    
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+    <script>
+        //@ 生成
+        Ui_table({
+            data: data,
+            sortType: 'all',
+            template: '#tem-tbody'
+        })
+    </script>
+</body>
+</html>
